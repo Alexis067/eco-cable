@@ -1,0 +1,43 @@
+*, *:before, *:after{
+    box-sizing: border-box;
+}
+
+html{
+    background: linear-gradient(to bottom right, $kaki, $white);
+    background-repeat: no-repeat;
+    min-height: 100vh;
+    color: $black;
+    font-size: 1rem;
+    font-family: $main-font;
+}
+
+a{
+    color: inherit;
+    text-decoration: none;
+}
+
+.wrapper {
+    max-width: 1080px;
+    margin: 0 auto;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: $second-font;
+}
+
+h1{
+    font-size: 4rem;
+}
+
+h2{
+    font-size: 3.2rem;
+}
+
+p {
+    margin-bottom: 6px;
+}

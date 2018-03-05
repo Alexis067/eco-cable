@@ -1,0 +1,16 @@
+header{
+    background-color: white;    
+    box-shadow: $box-shadow;
+
+    .header-wrapper {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .logo-wrapper > a{
+        display: block;
+        line-height: 0;
+    }
+}
