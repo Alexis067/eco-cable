@@ -9,7 +9,7 @@ Version: 1.0
    v2.0 | 20110126
    License: none (public domain)
 */
-@import url("https://fonts.googleapis.com/css?family=Lato|Roboto");
+@import url("https://fonts.googleapis.com/css?family=Lato:400,700|Roboto:400,700");
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -69,7 +69,12 @@ a {
 
 .wrapper {
   max-width: 1080px;
-  margin: 0 auto; }
+  margin-left: auto;
+  margin-right: auto; }
+
+main {
+  margin-top: 40px;
+  margin-bottom: 40px; }
 
 h1,
 h2,
@@ -87,6 +92,30 @@ h2 {
 
 p {
   margin-bottom: 6px; }
+
+.titles {
+  background-repeat: no-repeat !important;
+  background-size: cover !important;
+  background-position: center center !important;
+  text-align: center;
+  color: #777222;
+  padding: 70px 0;
+  font-weight: 900;
+  -webkit-box-shadow: 0 0 8px -2px #000;
+          box-shadow: 0 0 8px -2px #000;
+  margin-bottom: 20px; }
+
+.aligncenter {
+  position: relative;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%); }
+
+strong {
+  font-weight: bold; }
+
+section:not(:first-of-type) {
+  margin-top: 40px; }
 
 header {
   background-color: white;
@@ -109,34 +138,82 @@ header {
   header .logo-wrapper > a {
     display: block;
     line-height: 0; }
+  header .menu {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row; }
+    header .menu li {
+      -webkit-transition: .3s;
+      transition: .3s; }
+      header .menu li a {
+        padding: 10px 20px;
+        -webkit-transition: .3s;
+        transition: .3s;
+        border-top: solid 2px rgba(255, 255, 255, 0);
+        border-bottom: solid 2px rgba(255, 255, 255, 0); }
+      header .menu li:hover a {
+        color: #777222;
+        border-top: solid 2px #777222;
+        border-bottom: solid 2px #777222; }
 
-.accueil {
-  margin: 40px auto; }
-  .accueil .titles {
-    background: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0.7)), to(rgba(255, 255, 255, 0.7))), url("images/title_bg.jpg");
-    background: linear-gradient(rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.7)), url("images/title_bg.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center center;
-    text-align: center;
-    color: #777222;
-    padding: 70px 0;
-    font-weight: 900;
-    -webkit-box-shadow: 0 0 8px -2px #000;
-            box-shadow: 0 0 8px -2px #000;
-    margin-bottom: 30px; }
-  .accueil .content {
-    text-align: center; }
-    .accueil .content p {
-      margin: 0 auto;
-      margin-bottom: 2rem;
-      max-width: 800px;
-      font-size: 1.2rem;
-      line-height: 1.6rem; }
-  .accueil .content_bottom {
-    margin-top: 60px;
-    text-align: center;
-    font-size: 1.8rem; }
+.accueil .content {
+  text-align: center; }
+  .accueil .content p {
+    margin: 0 auto;
+    margin-bottom: 2rem;
+    max-width: 800px;
+    font-size: 1.2rem;
+    line-height: 1.6rem; }
+
+.accueil .content_bottom {
+  margin-top: 60px;
+  text-align: center;
+  font-size: 1.8rem; }
+
+.notre-activite .process {
+  margin: 20px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap; }
+  .notre-activite .process .process-item {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    position: relative; }
+    .notre-activite .process .process-item:not(:first-of-type) {
+      margin-left: 50px; }
+    .notre-activite .process .process-item:not(:last-of-type):after {
+      content: "\25BA";
+      position: absolute;
+      right: -50px;
+      top: 50%;
+      -webkit-transform: translateY(-50%);
+              transform: translateY(-50%); }
+    .notre-activite .process .process-item p {
+      margin-top: 15px; }
 
 footer {
   background-color: white;

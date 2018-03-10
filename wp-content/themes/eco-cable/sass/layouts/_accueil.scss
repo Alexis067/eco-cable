@@ -1,20 +1,4 @@
 .accueil {
-    margin: 40px auto;
-
-    .titles {
-        // background-image: url("images/title_bg.jpg");
-        background: linear-gradient(rgba(255,255,255,0.7), rgba(255,255,255,0.7)), url("images/title_bg.jpg");
-        background-repeat: no-repeat;
-        background-size: cover;
-        background-position: center center;
-        text-align: center;
-        color: $kaki;
-        padding: 70px 0;
-        font-weight: 900;
-        box-shadow: $box-shadow;
-        margin-bottom: 30px;
-    }
-
     .content {
         text-align: center;
         
