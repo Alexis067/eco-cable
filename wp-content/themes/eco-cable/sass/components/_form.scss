@@ -1,0 +1,22 @@
+form {
+    text-align: center;
+
+    label {
+        // margin-top: 20px;
+        display: block
+    }
+
+    input {
+        height: 40px;
+        min-width: 200px;
+        width: 50%;
+        font-size: 1.2rem;
+        padding-left: 10px;
+    }
+}
+
+.btn {
+    width: auto;
+    padding: 10px;
+    font-size: 1.2rem;
+}

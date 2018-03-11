@@ -5,7 +5,7 @@
         while ( have_posts() ) : the_post();
         $achat_bg_img = get_field('achat_bg_title');
         $transfo_bg_img = get_field('transfo_bg_title');
-        $vente_bg_img = get_field('$vente_bg_title');
+        $vente_bg_img = get_field('vente_bg_title');
     ?>
     <!-- ACHAT -->
     <section>
@@ -32,10 +32,18 @@
                 </div>
             <?php endwhile; endif; ?>
         </div>
+        <div class="content">
+            <?php the_field('content_2'); ?>
+        </div>
     </section>
     <!-- VENTE -->
     <section>
-
+        <div class="titles" style="background: linear-gradient(rgba(255,255,255,0.7), rgba(255,255,255,0.7)), url(<?php echo $vente_bg_img['url']; ?>);">
+            <h1><?php the_field('vente_title') ?></h1>
+        </div>
+        <div class="content">
+            <?php the_field('vente_content'); ?>
+        </div>
     </section>
     <?php
         endwhile;
